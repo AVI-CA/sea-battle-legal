@@ -62,14 +62,14 @@
 
       <h2>2. Data Collection and Usage</h2>
       <ul>
-        <li><strong>No Personal Data Collection:</strong> We do not collect, store, share, or process any personal information, user accounts, analytics, or telemetry data.</li>
-        <li><strong>Local Network Communication:</strong> The App uses Apple’s MultipeerConnectivity framework solely to establish a direct peer-to-peer (P2P) connection between devices over local Wi-Fi or Bluetooth.</li>
-        <li><strong>Data Transmission:</strong> All game data (such as move coordinates and game status) is transmitted directly between players’ devices within the local network. No game data or communication is ever sent to external servers, cloud databases, or third-party services.</li>
-        <li><strong>Device names:</strong> Nearby device names provided by iOS may appear on the participating devices during a local match. Those names stay on the devices and are not collected or stored by us.</li>
+        <li><strong>No Personal Data Collection:</strong> The App has no user accounts, analytics, or telemetry. We do not collect, store, share, or process personal information on our servers, and we do not send it to third parties.</li>
+        <li><strong>Local Network Communication:</strong> Nearby multiplayer uses Apple’s MultipeerConnectivity framework to connect two devices over the local network (Wi-Fi or peer-to-peer Wi-Fi). Internet is not required. Play vs Computer does not use the network at all.</li>
+        <li><strong>Data Transmission:</strong> During a nearby match, the two devices exchange only session data: device display names, a temporary match identifier, shot coordinates, hit/miss/sunk results, and turn or game status. Ship layouts are never sent. No game data is sent to external servers, cloud databases, or third-party services.</li>
+        <li><strong>Device names:</strong> The App uses the name of your device, as shown in iOS settings, so the other player can recognize a hosted game. That name is shown only on the two devices in the match and is not collected or stored by us.</li>
       </ul>
 
       <h2>3. Permissions</h2>
-      <p>The App requests access to the Local Network exclusively to discover and connect with nearby devices for local multiplayer gameplay. You can revoke this permission at any time through your iOS device settings.</p>
+      <p>The App requests Local Network access exclusively to discover and connect with nearby devices for local multiplayer. It does not request Bluetooth, camera, microphone, contacts, location, or tracking permission. You can revoke Local Network access at any time in iOS Settings.</p>
 
       <h2>4. Children’s Privacy</h2>
       <p>Because the App does not collect any personal data from any users, it is suitable for users of all ages and does not collect information covered by the Children’s Online Privacy Protection Act (COPPA).</p>
