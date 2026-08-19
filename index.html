@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Sea Battle: Local Wireless</title>
   <style>
     :root {
-      color-scheme: dark light;
-      --bg: #0b0d0f;
-      --card: #15181c;
-      --text: #f2f4f7;
-      --muted: #9aa3ad;
-      --accent: #2ec4ff;
-      --line: rgba(255,255,255,0.08);
-    }
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg: #f6f7f9;
-        --card: #ffffff;
-        --text: #121417;
-        --muted: #5c6670;
-        --line: rgba(0,0,0,0.08);
-      }
+      color-scheme: light;
+      --ink: #1b1f24;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --bg: #f7f7f5;
+      --card: #ffffff;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       line-height: 1.55;
+      color: var(--ink);
+      background: var(--bg);
     }
     main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 40px 20px 72px;
+      padding: 48px 20px 80px;
     }
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 28px 24px;
+      border-radius: 12px;
+      padding: 32px 28px;
     }
-    h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
-    .meta { color: var(--muted); margin-bottom: 28px; font-size: 0.95rem; }
-    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
-    p, li { color: var(--text); }
-    ul { padding-left: 1.2rem; }
-    li { margin: 6px 0; }
-    a { color: var(--accent); }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 28px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 28px 0 10px;
+    }
+    p, li { font-size: 16px; }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    a { color: #1d4ed8; }
   </style>
 </head>
 <body>
   <main>
     <article class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: August 16, 2026<br>App Name: Sea Battle: Local Wireless</p>
+      <p class="meta">Effective date: August 18, 2026<br>App Name: Sea Battle: Local Wireless</p>
 
       <h2>1. Overview</h2>
       <p>This Privacy Policy describes how Sea Battle: Local Wireless (the “App”) handles your information. We respect your privacy and are committed to protecting it.</p>
 
       <h2>2. Data Collection and Usage</h2>
       <ul>
-        <li><strong>No Personal Data Collection:</strong> The App has no user accounts, analytics, or telemetry. We do not collect, store, share, or process personal information on our servers, and we do not send it to third parties.</li>
-        <li><strong>Local Network Communication:</strong> Nearby multiplayer uses Apple’s MultipeerConnectivity framework to connect two devices over the local network (Wi-Fi or peer-to-peer Wi-Fi). Internet is not required. Play vs Computer does not use the network at all.</li>
-        <li><strong>Data Transmission:</strong> During a nearby match, the two devices exchange only session data: device display names, a temporary match identifier, shot coordinates, hit/miss/sunk results, and turn or game status. Ship layouts are never sent. No game data is sent to external servers, cloud databases, or third-party services.</li>
-        <li><strong>Device names:</strong> The App uses the name of your device, as shown in iOS settings, so the other player can recognize a hosted game. That name is shown only on the two devices in the match and is not collected or stored by us.</li>
+        <li><strong>No Personal Data Collection:</strong> The App has no user accounts, analytics, or telemetry of its own. We do not collect, store, share, or process personal information on our servers, and we do not send it to third parties that we control.</li>
+        <li><strong>Local Network Communication:</strong> Nearby multiplayer uses Apple’s MultipeerConnectivity framework to connect two devices over the local network (Wi-Fi or peer-to-peer Wi-Fi). Internet is not required for nearby play. Play vs Computer does not use the network at all.</li>
+        <li><strong>Game Center Online Play:</strong> Play Online uses Apple Game Center to authenticate players, match two players (invite a friend or Automatch), and carry match traffic. Apple processes your Game Center display name and Game Center identifier. We do not receive those identifiers on our servers, and we do not operate a game server. During an online match the two devices exchange the same session data as nearby play: display names, shot coordinates, hit/miss/sunk results, and turn or game status. Ship layouts are not sent during play. When a match ends, the two devices may exchange ship placements so each player can review both fleets.</li>
+        <li><strong>Data Transmission:</strong> During a nearby match, the two devices exchange only session data: device display names, a temporary match identifier, shot coordinates, hit/miss/sunk results, and turn or game status. Ship layouts are not sent during play. When a match ends, the two devices may exchange ship placements so each player can review both fleets. No game data is sent to our servers, cloud databases, or third-party services other than Apple Game Center for Play Online.</li>
+        <li><strong>Device names:</strong> For nearby play, the App uses the name of your device, as shown in iOS settings, so the other player can recognize a hosted game. That name is shown only on the two devices in the match and is not collected or stored by us. For Play Online, the other player sees your Game Center display name.</li>
       </ul>
 
       <h2>3. Permissions</h2>
-      <p>The App requests Local Network access exclusively to discover and connect with nearby devices for local multiplayer. It does not request Bluetooth, camera, microphone, contacts, location, or tracking permission. You can revoke Local Network access at any time in iOS Settings.</p>
+      <p>The App requests Local Network access exclusively to discover and connect with nearby devices for local multiplayer. Play Online uses Game Center and the internet through Apple. The App does not request Bluetooth, camera, microphone, contacts, location, or tracking permission. You can revoke Local Network access at any time in iOS Settings. You can sign out of Game Center in iOS Settings.</p>
 
       <h2>4. Children’s Privacy</h2>
-      <p>Because the App does not collect any personal data from any users, it is suitable for users of all ages and does not collect information covered by the Children’s Online Privacy Protection Act (COPPA).</p>
+      <p>The App does not collect personal data on our servers. Nearby play and Play vs Computer do not use Game Center. Play Online requires a Game Center account managed by Apple. It is suitable for users of all ages for nearby and computer play, and does not collect information covered by the Children’s Online Privacy Protection Act (COPPA) on our side.</p>
 
       <h2>5. Changes to This Privacy Policy</h2>
       <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
